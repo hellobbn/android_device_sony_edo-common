@@ -1,0 +1,8 @@
+on init
+    umount /oem
+
+on charger
+    write /sys/class/backlight/panel0-backlight/brightness 150
+
+service vendor.secure_element_hal_service /system/bin/true
+    disabled
