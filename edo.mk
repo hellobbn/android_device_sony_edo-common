@@ -56,6 +56,12 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     otapreopt_script
 
+# ADB
+ifeq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.adb.secure=0
+endif
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong
