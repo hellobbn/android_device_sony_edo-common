@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_wifiDelayDisconnectOnImsLostMs">1000</integer>
+    <integer name="config_wifiHardwareSoftapMaxClientCount">32</integer>
+    <integer name="config_wifiInitialPartialScanChannelMaxCount">10</integer>
+    <integer name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-81</integer>
+    <integer name="config_wifi_framework_wifi_score_entry_rssi_threshold_24GHz">-78</integer>
+    <integer name="config_wifi_framework_wifi_score_entry_rssi_threshold_5GHz">-78</integer>
+</resources>
