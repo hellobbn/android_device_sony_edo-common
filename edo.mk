@@ -23,10 +23,7 @@ PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pe
-    
-# RRO
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
+   
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml \
