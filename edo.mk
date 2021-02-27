@@ -23,6 +23,9 @@ PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pe
+    
+# RRO
+PRODUCT_ENFORCE_RRO_TARGETS += *
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -187,7 +190,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    WifiOverlay
+    WifiResCommon
 
 # WiFi Display
 PRODUCT_PACKAGES += \
