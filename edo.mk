@@ -23,6 +23,10 @@ PRODUCT_USE_PRODUCT_VNDK_OVERRIDE := true
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-pe
+    
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-pe
    
 # Permissions
 PRODUCT_COPY_FILES += \
