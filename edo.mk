@@ -117,8 +117,8 @@ PRODUCT_PACKAGES += \
     vendor.display.config@2.0
 
 # Livedisplay
-PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service-sdm
+#PRODUCT_PACKAGES += \
+#    lineage.livedisplay@2.0-service-sdm
 
 # fastbootd
 PRODUCT_PACKAGES += \
