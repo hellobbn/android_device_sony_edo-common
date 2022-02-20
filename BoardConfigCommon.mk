@@ -73,9 +73,9 @@ TARGET_BOARD_PLATFORM := kona
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+# TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
+# TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+# TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Qcom
 BOARD_USES_QCOM_HARDWARE := true
@@ -159,10 +159,10 @@ TARGET_USES_MKE2FS := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Sepolicy
-include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/qcom/sepolicy/SEPolicy.mk
 
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
-SYSTEM_EXT_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
@@ -175,4 +175,3 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := $(PLATFORM_SECURITY_PATCH_TIMESTAMP)
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 
 # Inherit from the proprietary version
--include vendor/oneplus/sm8250-common/BoardConfigVendor.mk
