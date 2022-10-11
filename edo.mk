@@ -523,6 +523,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnl
 
+PRODUCT_PACKAGES += \
+    DaxUI
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
