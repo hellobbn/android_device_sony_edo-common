@@ -1,0 +1,4 @@
+binder_call(hal_vsimapp_client, hal_vsimapp_server)
+
+add_hwservice(hal_vsimapp_server, hal_vsimapp_hwservice)
+allow hal_vsimapp_client hal_vsimapp_hwservice:hwservice_manager find;

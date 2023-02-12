@@ -1,0 +1,5 @@
+# HwBinder IPC from client to server
+binder_call(hal_tidaservice_client, hal_tidaservice_server)
+
+add_hwservice(hal_tidaservice_server, hal_tidaservice_hwservice)
+allow hal_tidaservice_client hal_tidaservice_hwservice:hwservice_manager find;

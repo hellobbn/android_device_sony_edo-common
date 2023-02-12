@@ -1,0 +1,25 @@
+# HAL
+/(odm|vendor/odm|system/vendor)/bin/tidad@1.2     u:object_r:hal_tidaservice_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.misys@(.*)?     u:object_r:hal_misys_default_exec:s0
+/(odm|vendor/odm|system/vendor)/bin/mlipayd@1.1     u:object_r:hal_mlipay_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.displayfeature@1\.0-service u:object_r:hal_displayfeature_xiaomi_default_exec:s0
+/(odm|vendor/odm|system/vendor)/bin/fidoca     u:object_r:hal_mfidoca_default_exec:s0
+/(odm|vendor/odm|system/vendor)/bin/mtd     u:object_r:hal_mtdservice_default_exec:s0
+/(odm|vendor/odm|system/vendor)/bin/mtd@1\.3     u:object_r:hal_mtdservice_default_exec:s0
+/(odm|vendor/odm|system/vendor)/bin/vendor\.xiaomi\.hardware\.otrpagent@2\.0-service   u:object_r:hal_otrpagent_default_exec:s0
+/(odm|vendor/odm|system/vendor)/bin/vsimd     u:object_r:hal_vsimapp_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.fbo@1\.0-service     u:object_r:hal_fbo_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.miperf@1\.0-service     u:object_r:hal_miperf_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.misight\.service     u:object_r:hal_misight_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.cld@1\.0-service     u:object_r:hal_cld_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.qti\.sla\.service\@1\.0-service u:object_r:hal_slaservice_qti_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service     u:object_r:hal_micharge_default_exec:s0
+
+# Executables
+/(vendor|system/vendor)/bin/displayfeature                                 u:object_r:vendor_displayfeature_exec:s0
+
+# Sysfs
+/sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)?         u:object_r:vendor_sysfs_displayfeature:s0
+
+# Device
+/dev/mi_display/disp_feature                                               u:object_r:vendor_displayfeature_device:s0

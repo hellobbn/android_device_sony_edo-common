@@ -1,0 +1,5 @@
+# HwBinder IPC from client to server
+binder_call(hal_misight_client, hal_misight_server)
+
+add_service(hal_misight_server, hal_misight_service)
+allow hal_misight_client hal_misight_service:service_manager find;

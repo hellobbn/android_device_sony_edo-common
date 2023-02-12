@@ -1,0 +1,5 @@
+type hal_fbo_default, domain;
+hal_server_domain(hal_fbo_default, hal_fbo);
+
+type hal_fbo_default_exec, exec_type, vendor_file_type, file_type;
+init_daemon_domain(hal_fbo_default);

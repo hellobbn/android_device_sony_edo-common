@@ -1,0 +1,4 @@
+binder_call(hal_displayfeature_xiaomi_client, hal_displayfeature_xiaomi_server)
+
+add_hwservice(hal_displayfeature_xiaomi_server, hal_displayfeature_xiaomi_hwservice)
+allow hal_displayfeature_xiaomi_client hal_displayfeature_xiaomi_hwservice:hwservice_manager find;

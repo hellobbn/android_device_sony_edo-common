@@ -1,0 +1,4 @@
+binder_call(hal_otrpagent_client, hal_otrpagent_server)
+
+add_hwservice(hal_otrpagent_server, hal_otrpagent_hwservice)
+allow hal_otrpagent_client hal_otrpagent_hwservice:hwservice_manager find;

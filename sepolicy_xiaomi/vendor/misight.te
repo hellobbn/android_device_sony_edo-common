@@ -1,0 +1,3 @@
+type misight, domain, coredomain;
+
+hal_client_domain(misight, hal_misight)

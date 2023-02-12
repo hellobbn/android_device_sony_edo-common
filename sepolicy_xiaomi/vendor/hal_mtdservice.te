@@ -1,0 +1,4 @@
+binder_call(hal_mtdservice_client, hal_mtdservice_server)
+
+add_hwservice(hal_mtdservice_server, hal_mtdservice_hwservice)
+allow hal_mtdservice_client hal_mtdservice_hwservice:hwservice_manager find;

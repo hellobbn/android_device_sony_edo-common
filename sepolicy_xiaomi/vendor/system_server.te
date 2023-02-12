@@ -1,0 +1,4 @@
+allow system_server hal_micharge_hwservice:hwservice_manager find;
+allow system_server hal_misys_hwservice:hwservice_manager find;
+
+hal_client_domain(system_server, hal_miperf)

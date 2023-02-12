@@ -1,0 +1,3 @@
+hal_client_domain(system_app, hal_minet)
+hal_client_domain(system_app, hal_slaservice)
+hal_client_domain(system_app, hal_micharge)

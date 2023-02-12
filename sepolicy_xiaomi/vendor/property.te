@@ -1,0 +1,4 @@
+vendor_internal_prop(vendor_wlan_ramdump_prop)
+vendor_internal_prop(vendor_modprobe_prop)
+vendor_internal_prop(vendor_fp_prop)
+vendor_internal_prop(vendor_nfc_mi_prop)

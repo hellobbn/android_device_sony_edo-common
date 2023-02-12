@@ -1,0 +1,4 @@
+binder_call(hal_fbo_client, hal_fbo_server)
+
+add_hwservice(hal_fbo_server, hal_fbo_hwservice)
+allow hal_fbo_client hal_fbo_hwservice:hwservice_manager find;

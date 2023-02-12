@@ -1,0 +1,5 @@
+permissive tee;
+permissive vendor_hal_keymaster_qti;
+permissive hal_bootctl_default;
+
+allow init sysfs_dp:file rw_file_perms;

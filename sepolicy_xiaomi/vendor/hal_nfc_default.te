@@ -1,0 +1,2 @@
+get_prop(hal_nfc_default, vendor_nfc_mi_prop)
+get_prop(hal_nfc_default, vendor_fp_prop)

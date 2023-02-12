@@ -1,0 +1,11 @@
+vendor.ramdump.wlan_name u:object_r:vendor_wlan_ramdump_prop:s0
+vendor.all.modules.ready   u:object_r:vendor_modprobe_prop:s0
+ro.vendor.se.                         u:object_r:vendor_nfc_mi_prop:s0
+ro.vendor.nfc.                        u:object_r:vendor_nfc_mi_prop:s0
+persist.vendor.sys.fp.    u:object_r:vendor_fp_prop:s0
+ro.hardware.fp.           u:object_r:vendor_fp_prop:s0
+vendor.fps_hal.           u:object_r:vendor_fp_prop:s0
+vendor.panel.display.     u:object_r:vendor_fp_prop:s0
+persist.vendor.goodix.    u:object_r:vendor_fp_prop:s0
+persist.vendor.fpc.       u:object_r:vendor_fp_prop:s0
+vendor.dtool.           u:object_r:vendor_fp_prop:s0

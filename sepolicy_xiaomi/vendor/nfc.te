@@ -1,0 +1,2 @@
+hal_client_domain(nfc, hal_micharge)
+allow nfc hal_micharge_default:binder call;

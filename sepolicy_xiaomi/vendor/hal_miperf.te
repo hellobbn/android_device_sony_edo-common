@@ -1,0 +1,4 @@
+binder_call(hal_miperf_client, hal_miperf_server)
+
+add_hwservice(hal_miperf_server, hal_miperf_hwservice)
+allow hal_miperf_client hal_miperf_hwservice:hwservice_manager find;

@@ -1,0 +1,4 @@
+binder_call(hal_slaservice_client, hal_slaservice_server)
+
+add_hwservice(hal_slaservice_server, hal_slaservice_hwservice)
+allow hal_slaservice_client hal_slaservice_hwservice:hwservice_manager find;

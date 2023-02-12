@@ -1,0 +1,4 @@
+binder_call(hal_minet_client, hal_minet_server)
+
+add_hwservice(hal_minet_server, hal_minet_hwservice)
+allow hal_minet_client hal_minet_hwservice:hwservice_manager find;
